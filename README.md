@@ -106,6 +106,12 @@ match the name, description, category or tags of a car
    }
    ```
    
+   Sample response:
+   ```javascript
+     {"error":"201","fault":"Completed Successfully","data":"46384102170000000001","success":false,"failed":true}
+    ```
+    The data contains the system id of the newly created resource.
+   
    *Car Tags*
    http://localhost:5030/api/cars/00000001/tags GET, POST
    http://localhost:5030/api/cars/00000001/tags/0001 GET, PUT, DELETE
