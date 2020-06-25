@@ -80,16 +80,16 @@ match the name, description, category or tags of a car
    Supported endpoints include:
    
    *Categories*
-   http://localhost:5030/api/categories GET, POST
-   http://localhost:5030/api/categories/00001 GET, PUT, DELETE
+   http://localhost:5030/api/categories GET, POST --
+   http://localhost:5030/api/categories/00001 GET, PUT, DELETE --
    
    *Tags*
-   http://localhost:5030/api/tags GET, POST
-   http://localhost:5030/api/tags/00001 GET, PUT, DELETE
+   http://localhost:5030/api/tags GET, POST --
+   http://localhost:5030/api/tags/00001 GET, PUT, DELETE --
    
    *Cars*   
-   http://localhost:5030/api/cars GET, POST
-   http://localhost:5030/api/cars/00000001 GET, PUT, DELETE
+   http://localhost:5030/api/cars GET, POST --
+   http://localhost:5030/api/cars/00000001 GET, PUT, DELETE --
    
    Sample input:
    ```javascript
