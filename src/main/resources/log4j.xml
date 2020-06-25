@@ -11,8 +11,8 @@
 			<param name="ConversionPattern" value="%d %d{Z} [%t] %-5p (%F:%L) - %m%n" />
 		</layout>
 	</appender>
-	<appender name="journaldev-hibernate" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="logs/project.log" />
+	<appender name="app" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/app.log" />
 		<param name="Append" value="true" />
 		<param name="ImmediateFlush" value="true" />
 		<param name="MaxFileSize" value="200MB" />
@@ -21,9 +21,9 @@
 			<param name="ConversionPattern" value="%d %d{Z} [%t] %-5p (%F:%L) - %m%n" />
 		</layout>
 	</appender>
-	<logger name="com.journaldev.hibernate" additivity="false">
+	<logger name="app" additivity="false">
 		<level value="INFO" />
-		<appender-ref ref="journaldev-hibernate" />
+		<appender-ref ref="clane-car" />
 	</logger>
 	<logger name="org.hibernate" additivity="false">
 		<level value="INFO" />
