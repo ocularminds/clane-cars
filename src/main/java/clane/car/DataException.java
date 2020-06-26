@@ -7,8 +7,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * System level exception handler
  *
- * @author Jejelowo B. Festus &lt;festus.jejelowo@ocularminds.com&gt;
+ * @author Jejelowo B. Festus
+ * @author mail.festus@gmail.com
  */
 public class DataException {
 

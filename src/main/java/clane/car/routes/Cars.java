@@ -1,6 +1,5 @@
 package clane.car.routes;
 
-import clane.car.Criteria;
 import clane.car.Fault;
 import clane.car.error.DuplicateError;
 import clane.car.error.InvalidParamsError;
@@ -139,7 +138,7 @@ public class Cars implements Route {
      */
     @GetMapping("/{id}/tags")
     public List<Tag> getTags(@PathVariable String id) {
-        return new ArrayList<>();//service.getTags(id);
+        return new ArrayList<>();
     }
 
     @ExceptionHandler(EmptyResultDataAccessException.class)

@@ -1,7 +1,6 @@
 package clane.car.config;
 
 import clane.car.model.Car;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -197,14 +197,12 @@ public class Fault implements Serializable {
 
     private static Map<String, String> load() {
         Map<String, String> responses = new HashMap<>();
-        responses.put("00", "Successful approval");
-        responses.put("85", "No reason to decline a request ");
-        responses.put("91", "Issuer unavailable ");
-        responses.put("93", "Transaction cannot be completed");
-        responses.put("94", "Duplicate Transmission");
-        responses.put("96", "System malfunction");
-        responses.put("N3", "Cash service not available");
-        responses.put("N4", "Rate limit exceeded.");
+        responses.put("200", "Successful");
+        responses.put("201", "Successful");
+        responses.put("404", "Service not unavailable ");
+        responses.put("300", "Duplicate Transmission");
+        responses.put("500", "System malfunction");
+        responses.put("301", "Rate limit exceeded.");
         return responses;
     }
 

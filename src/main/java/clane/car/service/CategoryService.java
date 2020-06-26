@@ -27,8 +27,7 @@ public class CategoryService {
     }
 
     /**
-     * Persists a terminal data to storage. It connects to the HSM and generate
-     * the terminal key as well.
+     * Persists a category data to storage. 
      *
      * @param input Category data
      * @return New category data
@@ -65,7 +64,7 @@ public class CategoryService {
     }
 
     /**
-     * Retrieves all terminal data
+     * Retrieves all category data
      *
      * @return Category records
      */
@@ -75,10 +74,10 @@ public class CategoryService {
     }
 
     /**
-     * Retrieves single terminal from storage.
+     * Retrieves single category from storage.
      *
      * @param id Category Id
-     * @return Beneficiary records
+     * @return Category details
      */
     public Category findById(String id) {
         return repository.findById(id).orElseThrow(() -> new NotFoundError("category " + id));

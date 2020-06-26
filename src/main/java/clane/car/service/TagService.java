@@ -24,11 +24,10 @@ public class TagService {
     }
 
     /**
-     * Persists a terminal data to storage. It connects to the HSM and generate
-     * the terminal key as well.
+     * Persists a tag data to storage.
      *
      * @param input Tag data
-     * @return New terminal data
+     * @return New tag data
      * @throws InvalidParamsError Error raised when query fails
      */
     public Fault create(Tag input) throws InvalidParamsError {
@@ -63,7 +62,7 @@ public class TagService {
     }
 
     /**
-     * Retrieves all terminal data
+     * Retrieves all tag data
      *
      * @return Tag records
      */
@@ -76,7 +75,7 @@ public class TagService {
      * Retrieves single terminal from storage.
      *
      * @param id Tag Id
-     * @return Beneficiary records
+     * @return tag records
      */
     public Tag findById(String id) {
         return repository.findById(id).orElseThrow(() -> new NotFoundError("tag " + id));

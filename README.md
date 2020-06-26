@@ -50,7 +50,7 @@ match the name, description, category or tags of a car
    
 2. **Building the application**
    1. Ensure you have JDK 1.8 installed on your syetem environment and **JAVA_HOME** in environment variable to point to the root of your JDK installation.
-   Also add _%JAVA_HOME%/bin to system path on windows or _$JAVA_HOME/bin to system path on linux.
+   Also add _%JAVA_HOME%/bin_ to system path on windows or _$JAVA_HOME/bin_ to system path on linux.
    2. Ensure Apache maven version 3.6.1 and above is installed on your system. Read here https://howtodoinjava.com/maven/how-to-install-maven-on-windows/
    3. Ensure Git is installed on your environment. Clone the source code by running command:
    ```bash

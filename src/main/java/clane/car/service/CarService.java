@@ -21,7 +21,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.logging.Level;
-import javax.persistence.EntityManager;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.From;
 import javax.persistence.criteria.Predicate;
@@ -47,16 +46,14 @@ public class CarService {
     private final CarRepository repository;
     private final CategoryRepository categoryRepository;
     private final TagRepository tagRepository;
-    private final EntityManager em;
     static final Logger LOG = Logger.getLogger(CarService.class.getName());
 
     @Autowired
     public CarService(CarRepository repo, CategoryRepository categoryRepository,
-            TagRepository tagRepository, EntityManager entityManager) {
+            TagRepository tagRepository) {
         this.repository = repo;
         this.categoryRepository = categoryRepository;
         this.tagRepository = tagRepository;
-        this.em = entityManager;
     }
 
     public boolean isNotPopulated() {

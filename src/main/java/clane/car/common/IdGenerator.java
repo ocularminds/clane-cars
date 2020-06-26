@@ -3,8 +3,10 @@ package clane.car.common;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
+ * Helper class for generation identity numbers of specified sizes.
  *
- * @author Jejelowo B. Festus <festus.jejelowo@ocularminds.com>
+ * @author Jejelowo B. Festus 
+ * @author mail.festus@gmail.com
  */
 public class IdGenerator {
 

@@ -8,9 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * The Categories class create various RESTful endpoints for data entry,
- * retrieval and update for application configurations and other configurations
- * that drive the application life cycle
+ * The Index class that shows availability of the application and running time.
  *
  * @author Festus B. Jejelowo
  * @author mail.festus@gmail.com
@@ -19,7 +17,7 @@ import java.util.Map;
 public class Index {
 
     /**
-     * New instance with configuration parameters
+     * Time application started.
      */
     LocalDateTime start;
 

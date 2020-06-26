@@ -37,6 +37,10 @@ public class ImageService {
         this.service = carService;
         this.uploadDirRoot = new File(uploadDir);
     }
+    
+    public String getUploadDirectory(){
+        return this.uploadDirRoot.getPath();
+    }
 
     public List<Image> find(String carId) throws Exception {
         Car car = service.car(carId);
