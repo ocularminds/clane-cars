@@ -63,7 +63,7 @@ match the name, description, category or tags of a car
    ```
    6. Upon succesful build, the binary file will be generated in the *tagert* folder.
 3. **Running the application**
-   1. Edit the config/application.properties file and replace the _app.db.password_ with your postgres user password.
+   1. Edit the __config/application.properties__ file and replace the _app.db.password_ with your postgres user password.
    2. On the bash/command prompt in the root directory of the application, run this command.
       ```bash
       java -jar target\clane-car.jar
